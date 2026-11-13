@@ -42,7 +42,14 @@ public class ArrayRataNilai05 {
                 predikat = "PERLU PENDAMPINGAN";
             }
             System.out.println("Predikat kelas: " + predikat);
+            
+            int jumlahLulus = 0;
+            for (int nilai : nilaiMhs) {
+                if (nilai > 70) jumlahLulus++;
+            }
+            System.out.println("Jumlah mahasiswa lulus: " + jumlahLulus);
 
+            input.close();
         }
     }
 }
